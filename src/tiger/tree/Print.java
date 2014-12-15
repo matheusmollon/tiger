@@ -197,7 +197,7 @@ public class Print implements Visitor {
 
     void prStm(EXPR s) {
         indent(d);
-        sayln("EXP(");
+        sayln("EXPR(");
         prExp(s.exp, d += 1);
         d-=1;
         say(")");
